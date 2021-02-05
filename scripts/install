@@ -115,7 +115,7 @@ ynh_local_curl "/install.php" "default_lang=$language" "install=Installer" "name
 #=================================================
 ynh_script_progression --message="Removing install.php and /update"
 
-# ynh_secure_remove --file="${final_path}/install.php"
+ynh_secure_remove --file="${final_path}/install.php"
 ynh_secure_remove --file="${final_path}/update"
 
 #=================================================
